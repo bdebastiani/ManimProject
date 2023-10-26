@@ -1,3 +1,4 @@
 FROM docker.io/manimcommunity/manim:v0.16.0
 
 COPY --chown=manimuser:manimuser . /manim
+RUN pip install pandas
